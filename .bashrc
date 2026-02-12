@@ -1,0 +1,1 @@
+alias jupyterstart="jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root > /dev/null 2>&1 &"

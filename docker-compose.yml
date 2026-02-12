@@ -7,5 +7,7 @@ services:
       - ./.vimrc:/root/.vimrc
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+    ports:
+      - "8888:8888"
     stdin_open: true
     tty: true

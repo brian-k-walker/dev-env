@@ -12,9 +12,18 @@ RUN apt-get update && apt-get install -y \
     curl \
     git \
     vim \
+    # Playwright dependencies
+    wget \ 
+    gnupg \
     && rm -rf /var/lib/apt/lists/*
 
 RUN npm install -g @google/gemini-cli
+
+# Playwright dependencies
+RUN pip install playwright
+RUN playwright install --with-deps chromium
+
+RUN pip install jupyter pandas
 
 WORKDIR /app
 
