@@ -8,6 +8,8 @@ services:
       - ./.gitconfig:/root/.gitconfig
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - GIT_USER=${GIT_USER}
+      - GIT_PWD=${GIT_PWD}
     ports:
       - "8888:8888"
     stdin_open: true
