@@ -5,6 +5,7 @@ services:
       - ../workspace:/app/workspace
       - ./.bashrc:/root/.bashrc
       - ./.vimrc:/root/.vimrc
+      - ./.gitconfig:/root/.gitconfig
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
     ports:
