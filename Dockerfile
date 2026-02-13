@@ -23,7 +23,11 @@ RUN npm install -g @google/gemini-cli
 RUN pip install playwright
 RUN playwright install --with-deps chromium
 
-RUN pip install jupyter pandas
+RUN pip install jupyter pandas gspread
+
+# Install Google Cloud SDK
+RUN curl -sSL https://sdk.cloud.google.com | bash -s -- --disable-prompts --install-dir=/opt
+ENV PATH="/opt/google-cloud-sdk/bin:${PATH}"
 
 WORKDIR /app
 
