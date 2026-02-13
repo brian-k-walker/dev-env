@@ -1,0 +1,7 @@
+
+# Force LF line endings for shell scripts and other files used in Docker/Linux
+*.sh text eol=lf
+.bashrc text eol=lf
+.bash_profile text eol=lf
+.profile text eol=lf
+Dockerfile text eol=lf
