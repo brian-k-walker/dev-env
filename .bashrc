@@ -1,6 +1,5 @@
 # Auto-configure git credentials if environment variables exist
 if [ ! -z "$GIT_PWD" ] && [ ! -z "$GIT_USER" ]; then
-    git config --global credential.helper store
     echo "https://${GIT_USER}:${GIT_PWD}@github.com" > ~/.git-credentials
     chmod 600 ~/.git-credentials
 fi

@@ -3,3 +3,5 @@
     email = 260127669+brian-k-walker@users.noreply.github.com 
 [alias]
     st = status
+[credential]
+	helper = store
