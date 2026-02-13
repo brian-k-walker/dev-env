@@ -2,7 +2,7 @@ services:
   dev:
     build: .
     volumes:
-      - ../workspace:/app/workspace
+      - ..:/app/workspace
       - ./.bashrc:/root/.bashrc
       - ./.vimrc:/root/.vimrc
       - ./.gitconfig:/root/.gitconfig
